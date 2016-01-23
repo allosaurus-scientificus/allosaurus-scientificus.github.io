@@ -68,7 +68,6 @@ img {
 </div>
 
 
-<p>If we still did Guild meetings or Wallows, I would share this there. Given how busy everyone is, I may just drop this into the Analyze This flow.</p>
 <div id="purpose" class="section level1">
 <h1>Purpose</h1>
 <p>Documenting my notes on a possible <code>R</code> bug (in <code>lubridate</code> or <code>dplyr</code>), and a lesson learned when I hacked a function I found in the internet.</p>
@@ -151,13 +150,13 @@ system.time(
     dply_list &lt;- dply_split(d)
     )</code></pre>
 <pre><code>##    user  system elapsed 
-##   1.353   0.063   1.421</code></pre>
+##   1.369   0.068   1.453</code></pre>
 <p>Compared to.</p>
 <pre class="r"><code>system.time(
     hack_list &lt;- train_test(d, .6)
 )</code></pre>
 <pre><code>##    user  system elapsed 
-##   0.272   0.026   0.301</code></pre>
+##   0.254   0.023   0.279</code></pre>
 <p>Checking on rows.</p>
 <pre class="r"><code>lapply(dply_list, nrow)</code></pre>
 <pre><code>## $dply_train
