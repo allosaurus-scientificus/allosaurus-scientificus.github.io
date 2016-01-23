@@ -8,7 +8,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
 
-<meta name="author" content="allo-thali" />
+<meta name="author" content="Allo Thali" />
 
 <meta name="date" content="2015-06-18" />
 
@@ -63,7 +63,7 @@ img {
 
 <div id="header">
 <h1 class="title">Dynamic Data Wrangling with R</h1>
-<h4 class="author"><em>allo-thali</em></h4>
+<h4 class="author"><em>Allo Thali</em></h4>
 <h4 class="date"><em>2015-06-18</em></h4>
 </div>
 
@@ -75,11 +75,11 @@ img {
 <p>For example…</p>
 <pre class="r"><code>##  when I got to finance from product, found myself doing this over and over
 ##  assumes lubridate
-raly_fyq &lt;- function(x){quarter(floor_date(ymd(x), &quot;month&quot;) + months(11), with_year = TRUE)}
+fyq &lt;- function(x){quarter(floor_date(ymd(x), &quot;month&quot;) + months(11), with_year = TRUE)}
 
-raly_fyq(&quot;2015-01-31&quot;)</code></pre>
+fyq(&quot;2015-01-31&quot;)</code></pre>
 <pre><code>## [1] 2015.4</code></pre>
-<pre class="r"><code>raly_fyq(&quot;2015-02-01&quot;)</code></pre>
+<pre class="r"><code>fyq(&quot;2015-02-01&quot;)</code></pre>
 <pre><code>## [1] 2016.1</code></pre>
 <p>There then came period in which there was a great proliferation of helper functions, e.g.</p>
 <pre class="r"><code>znull &lt;- function(x){ifelse(is.na(x), 0, x)}</code></pre>
