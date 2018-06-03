@@ -6,5 +6,5 @@ They certainly contain errors of all sorts.
 
 All sorts.
 
-Also, Dinosaurus Scientificus is a made up name.   _Dinosaurus scientificus_ is a made up dinosaur species.
+Also, Allosaurus Scientificus is a made up name.   _Allosaurus scientificus_ is a made up dinosaur species.
 
